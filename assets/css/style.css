@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+header,
+nav,
+section,
+aside,
+footer {
+  background-color: gold;
+  border: 0.5px solid #f7f7f7;
+  height: 200px;
+  padding-top: 1.5em;
+}
+
+@media (max-width: 420px) {
+  header,
+  nav,
+  section,
+  aside,
+  footer {
+    height: 100px;
+  }
+  aside {
+    display: none;
+  }
+  nav {
+    order: 1;
+  }
+  header {
+    order: 2;
+  }
+  section {
+    order: 3;
+  }
+  footer {
+    order: 4;
+  }
+}
